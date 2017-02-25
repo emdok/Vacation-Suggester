@@ -7,18 +7,35 @@ $(document).ready(function() {
     var qFourInput = parseInt($("#question4").val());
     var qFiveInput = parseInt($("#question5").val());
 
+    //All Equal Statements
+
     if (qOneInput === 1 && qTwoInput === 1 && qThreeInput === 1 && qFourInput === 1 && qFiveInput === 1) {
       $("#NorthAmerica").show();
     }
 
-    if (qOneInput === 2 && qTwoInput === 2 && qThreeInput === 2 && qFourInput === 2 && qFiveInput === 2) {
+    else if (qOneInput === 2 && qTwoInput === 2 && qThreeInput === 2 && qFourInput === 2 && qFiveInput === 2) {
       $("#Asia").show();
     }
 
-    if (qOneInput === 3 && qTwoInput === 3 && qThreeInput === 3 && qFourInput === 3 && qFiveInput === 3) {
+    else if (qOneInput === 3 && qTwoInput === 3 && qThreeInput === 3 && qFourInput === 3 && qFiveInput === 3) {
       $("#Europe").show();
     }
 
+    //Multi Statement Results
+
+    else if (qOneInput === 1 && qTwoInput === 1 && qThreeInput === 1 || qTwoInput === 1 && qThreeInput === 1 && qFourInput === 1 || qThreeInput === 1 && qFourInput === 1 && qFiveInput === 1 || qOneInput === 1 && qThreeInput === 1 && qFiveInput === 1 || qOneInput === 1 && qFourInput === 1 && qFiveInput === 1) {
+      $("#NorthAmerica").show();
+    }
+
+    else if (qOneInput === 2 && qTwoInput === 2 && qThreeInput === 2 || qTwoInput === 2 && qThreeInput === 2 && qFourInput === 2 || qThreeInput === 2 && qFourInput === 2 && qFiveInput === 2 || qOneInput === 2 && qThreeInput === 2 && qFiveInput === 2 || qOneInput === 2 && qFourInput === 2 && qFiveInput === 2) {
+      $("#Asia").show();
+    }
+
+    else if (qOneInput === 3 && qTwoInput === 3 && qThreeInput === 3 || qTwoInput === 3 && qThreeInput === 3 && qFourInput === 3 || qThreeInput === 3 && qFourInput === 3 && qFiveInput === 3 || qOneInput === 3 && qThreeInput === 3 && qFiveInput === 3 || qOneInput === 3 && qFourInput === 3 && qFiveInput === 3) {
+      $("#Europe").show();
+    }
+
+    // Result
 
     $(".personResult").text(personNameInput);
     $("#result").show();
