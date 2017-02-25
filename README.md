@@ -8,6 +8,10 @@
 
 Using Javascript and Jquery, users will choose from multiple choice questions to determine which vacation would be best suited for them.
 
+View program here:
+
+https://emdok.github.io/Vacation-Suggester/
+
 ## Setup/Installation Requirements
 
 * Clone the Vacation Suggester Repository
