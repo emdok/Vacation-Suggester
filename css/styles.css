@@ -1,3 +1,56 @@
-#NorthAmerica, #Europe, #Asia, #result {
+#NorthAmerica, #Europe, #Asia {
   display: none;
+}
+
+#result {
+  display: none;
+  padding-top: 20px;
+}
+
+/* Default Styles */
+
+body {
+  background-color: #FEFBE8;
+  margin: 30px;;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 55px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #C84026;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #C84026;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+form {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  border-style: double;
+  border-radius: 30px;
+  border-width: 5px;
+  padding: 20px;
+}
+
+img {
+  width: 50%;
+  display: block;
+  margin: auto;
+
 }
